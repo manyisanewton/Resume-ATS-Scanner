@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow: hidden;
+  background: radial-gradient(circle at 15% 20%, #3f1174 0%, #160026 40%, #05010d 100%);
+  color: #f8fafc;
+  font-family: sans-serif;
+}
+
+.auth-app-shell {
+  background-image:
+    radial-gradient(circle at 90% 5%, rgba(168, 85, 247, 0.25), transparent 30%),
+    radial-gradient(circle at 10% 95%, rgba(216, 180, 254, 0.18), transparent 35%);
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 500ms ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 420ms ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 420ms ease-out;
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-26px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(26px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

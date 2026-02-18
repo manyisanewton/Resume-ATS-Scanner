@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+backend/.venv/
+
+# Env files
+.env
+backend/.env
+
+# Runtime logs
+logs/
+backend/logs/
+
+# OS
+.DS_Store
